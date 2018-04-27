@@ -31,6 +31,6 @@ class Article(models.Model):
             default=timezone.now)
     description = models.TextField() # Abstract eg
     #image = models.ImageField(upload_to="article_images/") 
-    status = model.CharField(max_length=300) # Submitted, being reviewed, published
+    status = models.CharField(max_length=300) # Submitted, being reviewed, published
     def __str__(self):
         return self.title
